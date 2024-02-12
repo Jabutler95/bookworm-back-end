@@ -16,10 +16,10 @@ const reviewSchema = new Schema({
     type: Boolean,
     required: true
   },
-  // author: {
-  //   type: Schema.Types.ObjectId,
-  //   ref: 'Profile'
-  // }
+  author: {
+    type: Schema.Types.ObjectId,
+    ref: 'Profile'
+  }
 }, {
   timestamps: true
 })
@@ -29,10 +29,10 @@ const commentSchema = new Schema({
     type: String,
     required: true
   },
-  // author: {
-  //   type: Schema.Types.ObjectId,
-  //   ref: 'Profile'
-  // }
+  author: {
+    type: Schema.Types.ObjectId,
+    ref: 'Profile'
+  }
 }, {
   timestamps: true
 })
